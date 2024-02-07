@@ -24,7 +24,7 @@
     <input placeholder="type your email" id="email"><br>
     <textarea placeholder="Type a class meme and use <img src='img.jpg' width=''> for images and <br> for line breaks" id="content"></textarea><br>
     <button id="submit" onClick="submit()">Submit</button><br>
-    <p>Note:This will open you email, just press send with the email for approval</p>
+    <p>Note:This will open your email, in the subject, put your name in the subject and the message in the body</p>
   </body>
   <script>
     var email = document.body.getElementById("email");
@@ -32,7 +32,7 @@
     var message =document.body.getElementById("message");
 
     function submit(){
-      window.open("mailto:programmergoat@gmail.com?subject=" + name + "&body=" + message + " contact back at " + email);
+      window.open("mailto:programmergoat@gmail.com");
     }
 
     
