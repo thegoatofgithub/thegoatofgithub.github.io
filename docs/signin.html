@@ -21,7 +21,21 @@
   <body>
     <h1>Contribute to the Class Meme Network</h1>
     <input placeholder="type your name!" id="name"><br>
+    <input placeholder="type your email" id="email"><br>
     <textarea placeholder="Type a class meme and use <img src='img.jpg' width=''> for images and <br> for line breaks" id="content"></textarea><br>
-    <button id="submit">Submit</button><br>
-  </body><br>
+    <button id="submit" onClick="submit()">Submit</button><br>
+    <p>Note:This will open you email, just press send with the email for approval</p>
+  </body>
+  <script>
+    var email = document.body.getElementById("email");
+    var name = document.body.getElementById("name");
+    var message =document.body.getElementById("message");
+
+    submit(){
+      window.open("mailto:programmergoat@gmail.com?subject=" + name + "&body=" + message + " contact back at " + email);
+    }
+
+    
+    
+  </script>
 </html>
